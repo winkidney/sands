@@ -1,0 +1,12 @@
+@import "_color";
+
+.navbar-sands {
+  background-color: $navbar-bg;
+}
+
+.nav-title{
+  color: white;
+  &:hover{
+    color: white;
+  }
+}

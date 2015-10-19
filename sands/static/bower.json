@@ -1,0 +1,22 @@
+{
+  "name": "sands",
+  "homepage": "https://github.com/winkidney/sands",
+  "authors": [
+    "winkidney <winkidney@gmail.com>"
+  ],
+  "description": "sands frontend requires",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.6"
+  }
+}
