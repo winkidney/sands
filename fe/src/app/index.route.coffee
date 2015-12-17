@@ -3,9 +3,19 @@ angular.module 'fe'
     'ngInject'
     $stateProvider
       .state 'home',
-        url: '/'
+        url: '/home'
         templateUrl: 'app/main/main.html'
         controller: 'MainController'
         controllerAs: 'main'
+      .state 'new',
+        url: '/new'
+        templateUrl: 'app/main/main.html'
+        controller: 'MainController'
+        controllerAs: 'new'
+      .state 'about',
+        url: '/about'
+        templateUrl: 'app/main/main.html'
+        controller: 'MainController'
+        controllerAs: 'about'
 
-    $urlRouterProvider.otherwise '/'
+    $urlRouterProvider.otherwise '/home'

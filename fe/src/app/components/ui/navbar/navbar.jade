@@ -1,0 +1,22 @@
+nav.navbar.navbar-static-top.navbar-inverse
+  .container-fluid
+    .navbar-header
+      a.navbar-brand(href="#")
+        span.glyphicon.glyphicon-home
+        | Sands
+
+    .collapse.navbar-collapse#bs-example-navbar-collapse-6
+      ul.nav.navbar-nav
+        li(ng-class="navbar.isActive('home')? 'active': ''")
+          a(ui-sref="home") 主页
+        li(ng-class="navbar.isActive('about')? 'active': ''")
+          a(ui-sref="about") 注册/登录
+        li(ng-class="navbar.isActive('contact')? 'active': ''")
+          a(ui-sref="contact") 注册
+
+        li(data-animation="am-flip-x" bs-dropdown aria-haspopup="true" aria-expanded="false")
+          a Dropdown
+        ul(class="dropdown-menu" role="menu")
+          li
+            a(href="#anotherAction")
+              i(class="fa fa-download") &nbsp;

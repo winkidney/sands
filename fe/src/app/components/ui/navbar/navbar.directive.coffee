@@ -1,11 +1,12 @@
 angular.module 'fe'
   .directive 'acmeNavbar', ->
 
-    NavbarController = (moment) ->
+    NavbarController = (moment, $state, $log) ->
       'ngInject'
       vm = this
-      # "vm.creation" is avaible by directive option "bindToController: true"
-      vm.relativeDate = moment(vm.creationDate).fromNow()
+      vm.isActive = (stateName)->
+        $log.debug "Current state is:", $state.current
+        return $state.current.name is stateName
       return
 
     directive =
@@ -13,5 +14,5 @@ angular.module 'fe'
       templateUrl: 'app/components/navbar/navbar.html'
       scope: creationDate: '='
       controller: NavbarController
-      controllerAs: 'vm'
+      controllerAs: 'navbar'
       bindToController: true
