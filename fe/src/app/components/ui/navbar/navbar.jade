@@ -5,18 +5,22 @@ nav.navbar.navbar-static-top.navbar-inverse
         span.glyphicon.glyphicon-home
         | Sands
 
-    .collapse.navbar-collapse#bs-example-navbar-collapse-6
+    .collapse.navbar-collapse
       ul.nav.navbar-nav
         li(ng-class="navbar.isActive('home')? 'active': ''")
-          a(ui-sref="home") 主页
-        li(ng-class="navbar.isActive('about')? 'active': ''")
-          a(ui-sref="about") 注册/登录
-        li(ng-class="navbar.isActive('contact')? 'active': ''")
-          a(ui-sref="contact") 注册
+          a(ui-sref="home") Home
+        li(ng-class="navbar.isActive('explore')? 'active': ''")
+          a(ui-sref="explore") 浏览
+        li(ng-class="navbar.isActive('new_sands')? 'active': ''")
+          a(ui-sref="new_sands") 创造沙子
+        li(ng-class="navbar.isActive('login')? 'active': ''")
+          a(ui-sref="login") 登录
+        li(ng-class="navbar.isActive('register')? 'active': ''")
+          a(ui-sref="register") 注册
 
         li(data-animation="am-flip-x" bs-dropdown aria-haspopup="true" aria-expanded="false")
-          a Dropdown
+          a 更多
         ul(class="dropdown-menu" role="menu")
           li
             a(href="#anotherAction")
-              i(class="fa fa-download") &nbsp;
+              i.fa.fa-download(ui-sref="about") &nbsp; 关于

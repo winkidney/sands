@@ -11,7 +11,7 @@ angular.module 'fe'
 
     directive =
       restrict: 'E'
-      templateUrl: 'app/components/navbar/navbar.html'
+      templateUrl: 'app/components/ui/navbar/navbar.html'
       scope: creationDate: '='
       controller: NavbarController
       controllerAs: 'navbar'
