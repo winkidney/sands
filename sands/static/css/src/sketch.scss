@@ -1,6 +1,10 @@
 .search-box {
-  width: 20%;
+  min-width: 20%;
+  max-width: 50%;
+  .check-box >label{
+    margin-right: 2em;
+  }
 }
 .search-wrapper {
-  padding: 20em;
+  padding: 20em 0;
 }

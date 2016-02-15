@@ -1,3 +1,27 @@
 {% extends "from_sketch/base.html" %}
-{% block jumbotron %}
+{% block content %}
+  <div class="search-wrapper">
+    <div class="center center-block search-box text-center">
+      <form action="" method="post">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="when"> 时间要素
+          </label>
+          <label>
+            <input type="checkbox" name="where"> 地点要素
+          </label>
+          <label>
+            <input type="checkbox" name="who"> 人物要素
+          </label>
+          <label>
+            <input type="checkbox" name="what"> 随机物品
+          </label>
+          <label>
+            <input type="checkbox" name="how"> 感情要素
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">生成沙砾</button>
+      </form>
+    </div>
+  </div>
 {% endblock %}

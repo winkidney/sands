@@ -1,0 +1,51 @@
+body {
+  color: #777777; }
+
+.main {
+  margin-top: 50px; }
+
+.font-bold {
+  font-weight: bold; }
+
+.copyright {
+  color: #316E46; }
+
+.subtitle {
+  color: #777777; }
+
+.btn {
+  border: 0 none;
+  border-radius: 2px;
+  transition: all 0.5s ease 0s;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none; }
+
+.btn-primary {
+  background: #333333;
+  color: #ffffff; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background: #316E46; }
+
+.open > .dropdown-toggle.btn-primary {
+  background: #316E46; }
+
+.navbar-sands {
+  background-color: #316E46; }
+
+.nav-title {
+  color: white; }
+  .nav-title:hover {
+    color: white; }
+
+.search-box {
+  min-width: 20%;
+  max-width: 50%; }
+  .search-box .check-box > label {
+    margin-right: 2em; }
+
+.search-wrapper {
+  padding: 20em 0; }
+

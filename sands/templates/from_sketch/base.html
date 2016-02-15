@@ -22,7 +22,10 @@
   <nav class="navbar navbar-sands navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand nav-title" href="#">沙</a>
+        <a class="navbar-brand nav-title font-bold" href="#">
+          沙
+          <small>&nbsp;每一粒沙里的故事</small>
+        </a>
       </div>
     </div>
   </nav>
@@ -35,13 +38,13 @@
   <div class="main">
     <div class="container">
       <!-- Example row of columns -->
-      <div class="search-wrapper">
-        <div class="center center-block search-box text-center">hello</div>
-      </div>
-      <hr>
+    {% block content %}
+
+    {% endblock %}
+
     {% block footer %}
       <footer>
-        <p>&copy; 2016 SlassGear</p>
+        <p class="copyright">&copy; 2016 SlassGear</p>
       </footer>
     {% endblock %}
     </div> <!-- /container -->

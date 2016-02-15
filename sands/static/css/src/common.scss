@@ -1,3 +1,60 @@
+@import "_color";
+
+body{
+  color: $text-primary;
+}
+
 .main {
   margin-top: 50px;
 }
+.font-bold {
+  font-weight: bold;
+}
+
+// text-color
+
+.copyright{
+  color: $text-title-l;
+}
+
+.subtitle {
+  color: $text-primary;
+}
+
+// ============ bootstrap overwrite ========================
+
+// bootstrap button
+.btn {
+  border: 0 none;
+  border-radius: 2px;
+  transition: all 0.5s ease 0s;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn {
+  &:focus,
+  &:active:focus,
+  &.active:focus, {
+    outline: 0 none;
+  }
+
+}
+
+.btn-primary {
+  background: $btn-primary;
+  color: #ffffff;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  {
+    background: $btn-primary-hover;
+  }
+}
+
+.open > .dropdown-toggle.btn-primary{
+  background: $btn-primary-hover;
+}
+
+// ================== end bootstrap overwrite =================
