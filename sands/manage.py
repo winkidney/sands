@@ -26,9 +26,41 @@ def run(host="0.0.0.0", port=8888):
 def create_db():
     from sands.database import db
     from sands.models.auth import User
+    from sands.models.sketch import (
+        Word,
+        Type,
+        WordType,
+        Tag,
+        WordTag,
+    )
+    tables = [
+        User,
+        Word,
+        Type,
+        WordType,
+        Tag,
+        WordTag,
+    ]
+    db.create_tables(tables)
 
-    db.connect()
-    db.create_table(User)
+
+@entry.command(
+    help="create init tags and type"
+)
+def init_data():
+    from sands.models.sketch import (
+        Type,
+    )
+    from sands.database import db
+    from sands.models import _data as data
+
+    data_source = [
+        {"key": key, "name": name}
+        for key, name in data.types.iteritems()
+    ]
+
+    with db.atomic():
+        Type.insert_many(data_source).execute()
 
 
 if __name__ == "__main__":
