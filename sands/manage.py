@@ -1,3 +1,4 @@
+import os
 import click
 
 from sands.app import app
@@ -50,17 +51,40 @@ def create_db():
 def init_data():
     from sands.models.sketch import (
         Type,
+        Word,
+        WordType,
     )
     from sands.database import db
     from sands.models import _data as data
 
-    data_source = [
-        {"key": key, "name": name}
-        for key, name in data.types.iteritems()
+    types = [
+        {"name": name}
+        for name in data.types
     ]
 
+    words = []
+    for names in data.init_words.itervalues():
+        for name in names:
+            words.append({"name": name})
+
+    # Type and Word Base
     with db.atomic():
-        Type.insert_many(data_source).execute()
+        Type.insert_many(types).execute()
+        Word.insert_many(words).execute()
+
+    # Words ForeignKey
+    with db.atomic():
+        rows = []
+        for type_name, words in data.init_words.iteritems():
+            type_instance = Type.get(name=type_name)
+            for word in words:
+                rows.append(
+                    dict(
+                        type=type_instance,
+                        word=Word.get(name=word)
+                    )
+                )
+        WordType.insert_many(rows).execute()
 
 
 if __name__ == "__main__":
