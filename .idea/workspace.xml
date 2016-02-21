@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7fd086a-e4d1-47ea-9905-769822b4a98a" name="Default" comment="Update: add sketch base models">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sands/templates/from_sketch/index.html" afterPath="$PROJECT_DIR$/sands/templates/from_sketch/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sands/views/pages.py" afterPath="$PROJECT_DIR$/sands/views/pages.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+    <list default="true" id="c7fd086a-e4d1-47ea-9905-769822b4a98a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sands.iws" />
@@ -728,7 +724,19 @@
       <option name="project" value="LOCAL" />
       <updated>1456071424044</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update: ide surround settings">
+      <created>1456071437373</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1456071437373</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update: words query done">
+      <created>1456071471410</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1456071471410</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -807,7 +815,9 @@
     <MESSAGE value="Update: add logo" />
     <MESSAGE value="Update: add sketch base models" />
     <MESSAGE value="Update : add init words and init scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update : add init words and init scripts" />
+    <MESSAGE value="Update: ide surround settings" />
+    <MESSAGE value="Update: words query done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: words query done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

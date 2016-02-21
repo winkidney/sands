@@ -1,12 +1,12 @@
 # coding: utf-8
 
-types = (
-    u"时间",
-    u"地点",
-    u"人物",
-    u"物品",
-    u"感情",
-)
+types_map = {
+    "when": u"时间",
+    "where": u"地点",
+    "who": u"人物",
+    "what": u"物品",
+    "how": u"感情",
+}
 
 init_words = {
     u"时间": (u"早上", u"中午", u"晚上"),

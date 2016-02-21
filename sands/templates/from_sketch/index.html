@@ -6,6 +6,7 @@
     </div>
     <div class="center center-block search-box text-center">
       <form action="" method="post">
+        {{ form.csrf_token }}
         <div class="checkbox">
           <label>
             <input type="checkbox" name="when"> 时间要素

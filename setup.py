@@ -18,9 +18,10 @@ setup(
     author_email='winkidney@gmail.com',
     description='Make sentence from words, enjoy and make new story.',
     install_requires=[
-        "flask",
-        "flask-login",
-        "peewee",
-        "click",
+        "Flask==0.10.1",
+        "Flask-Login==0.3.2",
+        "Flask-WTF==0.12",
+        "peewee==2.8.0",
+        "click==6.2",
     ]
 )
