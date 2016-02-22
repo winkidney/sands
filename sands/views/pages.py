@@ -20,11 +20,10 @@ def sketch():
                 Word.random_by_type(type_name).name
                 for type_name in form.get_true_field()
             )
-            return jsonify(
-                {
-                    "result": result
-                }
+            return render_template(
+                "from_sketch/search/result.html",
+                **locals()
             )
         return jsonify(form.errors)
     else:
-        return render_template("from_sketch/index.html", **locals())
+        return render_template("from_sketch/search/index.html", **locals())

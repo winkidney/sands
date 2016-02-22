@@ -1,15 +1,23 @@
-.search-box {
-  min-width: 20%;
-  max-width: 50%;
-  .check-box >label{
-    margin-right: 2em;
-  }
-}
-.search-wrapper {
-  padding: 20em 0;
-  > .logo-wrapper {
-    >.logo {
-      width: 40%;
+.sketch {
+  //----------------- search page --------------------
+  >.search-box {
+    min-width: 20%;
+    max-width: 50%;
+    .checkbox-list > label {
+      margin-right: 2em;
     }
+  }
+  >.search-wrapper {
+    padding: 20em 0;
+    > .logo-wrapper {
+      > .logo {
+        width: 40%;
+      }
+    }
+  }
+
+  //------------------ search result ------------------
+  >.result-wrapper {
+    margin: 5em 0;
   }
 }

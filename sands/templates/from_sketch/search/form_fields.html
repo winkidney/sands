@@ -1,0 +1,7 @@
+{% for field in form %}
+  {% if field.name != "csrf_token" %}
+  <label>
+    <input class="search-option" type="checkbox" name="{{ field.name }}">&nbsp; {{ field.label.text }}
+  </label>
+  {% endif %}
+{% endfor %}

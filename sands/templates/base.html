@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+      {% block title %}{% endblock %}
+  </title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+{# boostrap #}
+  <link rel="stylesheet" href="/static/components/bootstrap/dist/css/bootstrap.min.css">
+{# end bootstrap #}
+  <link rel="stylesheet" href="/static/css/dist/style.css">
+  {% block extra_js %}
+  {% endblock %}
+  {% block extra_css %}
+  {% endblock %}
+</head>
+<body>
+{% block topbar %}
+  <nav class="navbar navbar-sands navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand nav-title font-bold" href="/">
+          沙
+          <small>&nbsp;每一粒沙里的故事</small>
+        </a>
+      </div>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block jumbotron %}
+{% endblock %}
+
+{% block container %}
+  <div class="main">
+    <div class="container">
+      <!-- Example row of columns -->
+    {% block content %}
+
+    {% endblock %}
+
+    {% block footer %}
+      <footer>
+        <p class="copyright">&copy; 2016 SlassGear</p>
+      </footer>
+    {% endblock %}
+    </div> <!-- /container -->
+  </div>
+{% endblock %}
+  <script src="/static/components/jquery/dist/jquery.min.js"></script>
+  <script src="/static/components/bootstrap/dist/js/bootstrap.min.js"></script>
+{% block footer_js %}
+{% endblock %}
+</body>
+</html>

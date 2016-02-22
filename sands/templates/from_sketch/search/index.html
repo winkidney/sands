@@ -1,0 +1,17 @@
+{% extends "from_sketch/base.html" %}
+{% block sketch_body %}
+<div class="search-wrapper">
+  <div class="logo-wrapper">
+    <img class="logo center-block" src="/static/images/logo.gif" alt="logo">
+  </div>
+  <div class="center center-block search-box text-center">
+    <form action="" method="post">
+      {{ form.csrf_token }}
+      <div class="checkbox-list">
+        {% include "from_sketch/search/form_fields.html" %}
+      </div>
+      <button type="submit" class="btn btn-primary">生成沙砾</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
