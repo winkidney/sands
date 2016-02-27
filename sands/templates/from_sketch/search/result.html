@@ -1,16 +1,24 @@
 {% extends "from_sketch/base.html" %}
 {% block sketch_body %}
   <div class="result-wrapper col-md-12 col-sm-12 col-lg-12">
-    <div class="tool-box no-lr-padding col-md-4 col-sm-12 col-lg-3">
-      <form action="/sketch" method="post">
+    <div class="side-bar no-lr-padding  border-top-thick col-md-3 col-sm-12 col-lg-3">
+      <h4 class="title">重新生成</h4>
+      <form class="re-search" action="/sketch" method="post">
+        {{ form.csrf_token }}
         {% include "from_sketch/search/form_fields.html" %}
+        <button type="submit" class="make-sands btn btn-primary">生成沙砾</button>
       </form>
     </div>
-    <div class="col-md-8 col-sm-12 col-lg-9">
-      {% for word in result %}
-        <span> {{ word }}</span>
+    <div class="col-md-9 col-sm-12 col-lg-9">
+      <h2>沙子们 <small>The sands</small></h2>
+      {% for type, word in result.items() %}
+        <div class="panel panel-success">
+          <div class="panel-heading">{{ type }}</div>
+            <div class="panel-body">
+              <span> {{ word }}</span>
+          </div>
+        </div>
       {% endfor %}
-
     </div>
   </div>
 {% endblock %}

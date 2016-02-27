@@ -19,5 +19,20 @@
   //------------------ search result ------------------
   >.result-wrapper {
     margin: 5em 0;
+
+    >.side-bar {
+      >.title {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      .re-search {
+        >label {
+          width: 100%;
+        }
+        >.make-sands {
+          margin-top: 1em;
+        }
+      }
+    }
   }
 }

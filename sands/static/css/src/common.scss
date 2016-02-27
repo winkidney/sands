@@ -1,5 +1,6 @@
 @import "_color";
 
+
 body{
   color: $text-primary;
 }
@@ -57,4 +58,41 @@ body{
   background: $btn-primary-hover;
 }
 
+// panel
+.panel {
+
+  .panel-heading{
+    font-weight: bold;
+    transition: all .2s ease-in-out .05s;
+  }
+
+  &.panel-success {
+    > .panel-heading {
+      background-color: $text-bg-d;
+      color: $text-primary-d;
+
+      &:hover {
+        padding-left: 2em;
+        background-color: $panel-success;
+        color: $text-success-w;
+      }
+
+    }
+  }
+}
+
 // ================== end bootstrap overwrite =================
+
+// ================== titles ======================
+h1,
+h2,
+h3,
+h4,
+h5{
+  font-weight: bolder;
+  text-rendering: optimizeLegibility;
+  font-family: Montserrat, 'Helvetica Neue', sans-serif;
+  color: $text-title;
+  margin-top: 0;
+  margin-bottom: .5em;
+}

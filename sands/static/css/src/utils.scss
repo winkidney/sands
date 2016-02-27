@@ -1,4 +1,10 @@
+@import "_color";
+
 .no-lr-padding {
   padding-left: 0;
   padding-right: 0;
+}
+
+.border-top-thick {
+  border-top: 4px solid $top-border-block;
 }

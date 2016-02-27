@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("/static/fonts/Montserrat-Regular.ttf"); }
+
+.no-lr-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
+.border-top-thick {
+  border-top: 4px solid #E7E7E7; }
+
 body {
   color: #777777; }
 
@@ -32,6 +43,30 @@ body {
 .open > .dropdown-toggle.btn-primary {
   background: #316E46; }
 
+.panel .panel-heading {
+  font-weight: bold;
+  transition: all .2s ease-in-out .05s; }
+
+.panel.panel-success > .panel-heading {
+  background-color: #E7E7E7;
+  color: #333333; }
+  .panel.panel-success > .panel-heading:hover {
+    padding-left: 2em;
+    background-color: #316E46;
+    color: white; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bolder;
+  text-rendering: optimizeLegibility;
+  font-family: Montserrat, 'Helvetica Neue', sans-serif;
+  color: #444444;
+  margin-top: 0;
+  margin-bottom: .5em; }
+
 .navbar-sands {
   background-color: #316E46; }
 
@@ -53,8 +88,11 @@ body {
 
 .sketch > .result-wrapper {
   margin: 5em 0; }
-
-.no-lr-padding {
-  padding-left: 0;
-  padding-right: 0; }
+  .sketch > .result-wrapper > .side-bar > .title {
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .sketch > .result-wrapper > .side-bar .re-search > label {
+    width: 100%; }
+  .sketch > .result-wrapper > .side-bar .re-search > .make-sands {
+    margin-top: 1em; }
 
