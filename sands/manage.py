@@ -58,8 +58,8 @@ def init_data():
     from sands.models import data
 
     types = [
-        {"name": t.name}
-        for t in data.types_map
+        {"name": t['name']}
+        for t in data.types_map.values()
     ]
 
     words = []
