@@ -1,11 +1,9 @@
-import os
 import click
 
 from sands.app import app
 
-
-def register_views():
-    import sands.views
+# register views
+import sands.views
 
 
 @click.group("manage")
@@ -17,7 +15,6 @@ def entry():
     help="run development server"
 )
 def run(host="0.0.0.0", port=8888):
-    register_views()
     app.run(host, port, debug=True)
 
 
